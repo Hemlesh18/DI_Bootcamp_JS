@@ -52,6 +52,7 @@ main{
     height: 115vh;
     width: 100%;
     margin-top: 0;
+    /* z-index: 1; */
 }
 
 .title{

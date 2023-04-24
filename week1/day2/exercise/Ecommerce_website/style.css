@@ -1,0 +1,35 @@
+html{
+    margin:0%;
+}
+nav{
+    margin: 0%;
+}
+.navbar{
+    background-color: #000;
+    color: #fff;
+    padding: 19px;
+    font-size: 30px;
+    font-weight: bold;
+    /* display: inline-block; */
+    width: 100%;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+.nav-logo i{
+    background: #fff;
+    /* margin-left: 6vh; */
+
+}
+.nav-product a{
+
+    text-decoration: none;
+    color: #fff;
+    text-align: end;
+    margin-left: 17vh;
+    position: absolute;
+    top: 19px;
+    left: 18vh;
+    left: 164vh;
+
+
+}
