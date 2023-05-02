@@ -1,0 +1,76 @@
+<!-- For each of the questions, find 2 WAYS of accessing :
+
+1. The div DOM node?
+
+2. The ul DOM node?
+
+3. The second li (with Pete)? -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<body>
+  <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+
+  <p id="mypara">this is a test </p>
+
+
+  <a id= "google"  href="kkdfdkdfkd">google</a>
+
+  <h1 class="title">title2</h1>
+
+
+<form >
+    <label>name</label>
+    <input type="text" name="name" id="name">
+    <a onclick="read()">Read</a>
+
+</form>
+
+<a onclick="show()">Show</a>
+
+</body>
+<footer>
+    <script defer>
+        var div = document.body.children[0];
+        var ul = div.nextElementSibling;
+        var li= ul.children[1]
+        console.log(div.innerHTML)
+        console.log(ul.innerHTML)
+        console.log(li.innerHTML)
+// select para
+var para= document.getElementById("mypara")// first way of selecting an element
+console.log(para.innerHTML)
+// replace content of mypara
+para.innerHTML="this is a new content, we change the para";
+
+var google = document.querySelector("#google");// second way to select element
+google.innerHTML="bing";
+google.href="https://bing.com";
+
+var title=document.getElementsByClassName("title")[0];
+title.innerHTML="new titleeeeeeeeeeeeee";
+let name = document.querySelector("#name").value="hem";
+function read(){
+    var name = document.querySelector("#name").value;
+    alert("hello "+ name);
+    document.querySelector("#name").value="already welcome";
+}
+
+
+
+
+    </script>
+</footer>
+</html>
