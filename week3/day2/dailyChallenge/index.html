@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+
+    <h1>Mad Libs</h1>
+
+    <form id="libform">
+        <label for="noun">Noun:</label><input type="text" id="noun"><br>
+        <label for="adjective">Adjective:</label><input type="text" id="adjective"><br>
+        <label for="person">Someone's Name:</label><input type="text" id="person"><br>
+        <label for="verb">Verb:</label><input type="text" id="verb"><br>
+        <label for="place">A place:</label><input type="text" id="place"><br>
+        <button id="lib-button">Lib it!</button>
+
+    </form>
+
+    <p>Generated story:
+    <span id="story"></span>
+    </p>
+
+    <script>
+        const form = document.querySelector('#libform');
+        const storySpan = document.querySelector('#story');
+
+
+        function generateStory() {
+            const noun = document.querySelector('#noun').value;
+            const adjective = document.querySelector('#adjective').value;
+            const person = document.querySelector('#person').value;
+            const verb = document.querySelector('#verb').value;
+            const place = document.querySelector('#place').value;
+
+            if (!noun || !adjective || !person || !verb || !place) {
+                console.error('All values must be filled');
+                return;
+            }
+
+            const story = "Once upon a time, there was a "+ adjective +  noun + " named" + person +"." + person+ " loved to"+ verb +  "at" +place + "." + " One day, while " +verb +"ing,"+  person +"stumbled upon a magical" + noun +  "." + person+ " picked up the "+ noun + " and suddenly found themselves transported to a far-off land where everything was made of " +noun+ "."+ "The end.";
+
+            storySpan.innerText = story;
+        }
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            generateStory();
+        });
+
+
+
+    </script>
+
+ </body>
+</html>
