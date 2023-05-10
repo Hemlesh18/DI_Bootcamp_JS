@@ -76,7 +76,7 @@ function makeJuice(){
     function displayJuice(){
 
               let x =  document.querySelector(".juice").innerHTML=`The client wants a ${size} juice, containing  ${fruit}.`
-                // console.log("here")
+
               x.slice(0, -3)
 
 
