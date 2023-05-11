@@ -15,5 +15,5 @@ function anagram(str1,str2){
     }
     return true;
 }
-console.log(anagram("Astronomer","Moon starer"));
+console.log(anagram("Astrohhnomer","Moon starer"));
 console.log(anagram("sum","usm"));
