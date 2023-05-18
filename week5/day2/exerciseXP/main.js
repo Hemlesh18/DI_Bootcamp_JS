@@ -24,4 +24,4 @@ xhr.onload = function() {
 // Send the AJAX request
 xhr.send();
 
-// ex2
+
