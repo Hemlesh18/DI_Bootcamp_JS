@@ -27,49 +27,49 @@
 // In your js file, create a self invoking funtion that takes 1 argument: the name of the user that just signed in.
 // The function should add a div in the nabvar, displaying the name of the user and his profile picture.
 
-// (function(name){
-//     let nameofuser=prompt("enter your name")
-//     document.querySelector(".navbar-item").innerHTML=nameofuser;
+(function(name){
+    let nameofuser=prompt("enter your name")
+    document.querySelector(".navbar-item").innerHTML=nameofuser;
 
-// })();
+})();
 
 // 5
 
 
-function makeJuice(){
-    let ingredient=[]
+// function makeJuice(){
+//     let ingredient=[]
 
-    let size=prompt("what size of juice do you want")
-//    ingredient.forEach(displayJuice)
-    function addIngredients(){
-        let first=prompt("what is the first ingredient")
-        let second=prompt("what is the second ingredient")
-        let third=prompt("what is the third ingredient")
-        ingredient.push(first)
-        ingredient.push(second)
-        ingredient.push(third)
-        console.log(ingredient)
-    }
-    addIngredients()
-    addIngredients()
+//     let size=prompt("what size of juice do you want")
+// //    ingredient.forEach(displayJuice)
+//     function addIngredients(){
+//         let first=prompt("what is the first ingredient")
+//         let second=prompt("what is the second ingredient")
+//         let third=prompt("what is the third ingredient")
+//         ingredient.push(first)
+//         ingredient.push(second)
+//         ingredient.push(third)
+//         console.log(ingredient)
+//     }
+//     addIngredients()
+//     addIngredients()
 
-    let fruit = ''// ingredient.toString();
-    ingredient.forEach(function(value) {fruit +=value +", "})
-
-
-    function displayJuice(){
-
-              let x =  document.querySelector(".juice").innerHTML=`The client wants a ${size} juice, containing  ${fruit}.`
-
-              x.slice(0, -3)
+//     let fruit = ''// ingredient.toString();
+//     ingredient.forEach(function(value) {fruit +=value +", "})
 
 
-    }
-    displayJuice()
+//     function displayJuice(){
+
+//               let x =  document.querySelector(".juice").innerHTML=`The client wants a ${size} juice, containing  ${fruit}.`
+
+//               x.slice(0, -3)
 
 
-}
-makeJuice()
+//     }
+//     displayJuice()
+
+
+// }
+// makeJuice()
 
 
 
