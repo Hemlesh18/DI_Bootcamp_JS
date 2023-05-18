@@ -1,18 +1,12 @@
 // ex1
-
 const promise1 = Promise.resolve(3);
 const promise2 = 42;
 const promise3 = new Promise((resolve, reject) => {
   setTimeout(resolve, 3000, 'foo');
 });
-
-// use promiseAll
-
-
-
-
-
-
+Promise.all([promise1, promise2, promise3]).then((values) => {
+  console.log(values);
+});
 //  ex2
  // Function to retrieve sunrise time using the API
 //  async function getSunriseTime(latitude, longitude) {
