@@ -1,0 +1,22 @@
+-- CREATE TABLE actors(
+--  actor_id SERIAL PRIMARY KEY,
+--  first_name VARCHAR (50) NOT NULL,
+--  last_name VARCHAR (100) NOT NULL,
+--  age DATE NOT NULL,
+--  number_oscars SMALLINT NOT NULL
+-- )
+-- INSERT INTO actors (first_name, last_name, age, number_oscars)
+-- VALUES('Matt','Damon','08/10/1970', 5),
+-- ('George','Clooney','06/05/1961', 2),
+-- ('Hanna','Clone','26/07/1861', 3),
+-- ('Alice','Sammie ','28/02/1978', 6),
+-- ('Ben','Ten','06/09/1891', 3),
+-- ('Alex','Como','26/05/1961', 3),
+-- ('Humpy','Rex','10/11/1999', 3)
+-- SELECT * FROM actors;
+-- SELECT first_name AS name_actor, age AS birth_date FROM actors;
+-- SELECT * FROM actors ORDER BY actor_id DERC;
+
+-- SELECT * FROM actors where first_name like '%e%';
+-- SELECT * FROM actors where number_oscars >= '5';
+-- SELECT COUNT (*) FORM actors ;
