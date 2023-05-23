@@ -15,7 +15,7 @@
 -- ('Humpy','Rex','10/11/1999', 3)
 -- SELECT * FROM actors;
 -- SELECT first_name AS name_actor, age AS birth_date FROM actors;
--- SELECT * FROM actors ORDER BY actor_id DERC;
+-- SELECT * FROM actors ORDER BY actor_id DESC;
 
 -- SELECT * FROM actors where first_name like '%e%';
 -- SELECT * FROM actors where number_oscars >= '5';
