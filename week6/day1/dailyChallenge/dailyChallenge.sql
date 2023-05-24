@@ -19,4 +19,4 @@
 
 -- SELECT * FROM actors where first_name like '%e%';
 -- SELECT * FROM actors where number_oscars >= '5';
--- SELECT COUNT (*) FORM actors ;
+-- SELECT COUNT (*) FROM actors ;
