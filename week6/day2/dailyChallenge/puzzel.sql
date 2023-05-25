@@ -8,7 +8,7 @@
 -- (7,'Krish'),
 -- (NULL,'Avtaar');
 
--- SELECT * FROM FirstTab;
+-- SELECT * FROM FirstTab
 
 -- CREATE TABLE SecondTab (
 --     id integer
