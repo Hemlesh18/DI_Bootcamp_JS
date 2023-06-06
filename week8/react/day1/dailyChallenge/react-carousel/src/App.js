@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
+import './carousel.css';
 import React from 'react';
 // import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
